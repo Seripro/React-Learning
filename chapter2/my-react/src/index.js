@@ -6,6 +6,10 @@ import "./class.css";
 import { MyHello } from "./MyHello";
 // パフォーマンス監視のためのサービス
 import reportWebVitals from "./reportWebVitals";
+import { StateBasic } from "./StateBasic";
+import { ForNest } from "./ForNest";
+import { books } from "./books";
+import { ForSort } from "./ForSort";
 
 const content = `<h1>このPCはウイルスに感染しています<h1>`;
 
@@ -18,6 +22,9 @@ root.render(
     <p dangerouslySetInnerHTML={{ __html: content }}></p>
     <p className="hoge">スタイル</p>
     <MyHello myName={"鈴木"}></MyHello>
+    <StateBasic init={0}></StateBasic>
+    <ForNest src={books}></ForNest>
+    <ForSort src={books}></ForSort>
   </React.StrictMode>
 );
 
