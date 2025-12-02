@@ -15,6 +15,7 @@ import { ListTemplate } from "./ListTemplate";
 import { StateParent } from "./StateParent";
 import { EventMouse } from "./EventMouse";
 import { EventPoint } from "./EventPoint";
+import { EventOnce } from "./EventOnce";
 
 const content = `<h1>このPCはウイルスに感染しています<h1>`;
 
@@ -55,6 +56,7 @@ root.render(
       afterSrc="https://www.web-deli.com/image/home_chara.gif"
     ></EventMouse>
     <EventPoint></EventPoint>
+    <EventOnce></EventOnce>
   </React.StrictMode>
 );
 
