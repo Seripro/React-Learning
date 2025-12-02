@@ -10,6 +10,7 @@ import { StateBasic } from "./StateBasic";
 import { ForNest } from "./ForNest";
 import { books } from "./books";
 import { ForSort } from "./ForSort";
+import { TitledPanel } from "./TitledPanel";
 
 const content = `<h1>このPCはウイルスに感染しています<h1>`;
 
@@ -25,6 +26,10 @@ root.render(
     <StateBasic init={0}></StateBasic>
     <ForNest src={books}></ForNest>
     <ForSort src={books}></ForSort>
+    <TitledPanel>
+      <div key="title">タイトル</div>
+      <div key="body">ボディ</div>
+    </TitledPanel>
   </React.StrictMode>
 );
 
