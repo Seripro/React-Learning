@@ -13,6 +13,7 @@ import { ForSort } from "./ForSort";
 import { TitledPanel } from "./TitledPanel";
 import { ListTemplate } from "./ListTemplate";
 import { StateParent } from "./StateParent";
+import { EventMouse } from "./EventMouse";
 
 const content = `<h1>このPCはウイルスに感染しています<h1>`;
 
@@ -47,6 +48,11 @@ root.render(
       )}
     </ListTemplate>
     <StateParent></StateParent>
+    <EventMouse
+      alt="ロゴ画像"
+      beforeSrc="https://www.web-deli.com/image/linkbanner_l.gif"
+      afterSrc="https://www.web-deli.com/image/home_chara.gif"
+    ></EventMouse>
   </React.StrictMode>
 );
 
