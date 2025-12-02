@@ -11,6 +11,8 @@ import { ForNest } from "./ForNest";
 import { books } from "./books";
 import { ForSort } from "./ForSort";
 import { TitledPanel } from "./TitledPanel";
+import { ListTemplate } from "./ListTemplate";
+import { StateParent } from "./StateParent";
 
 const content = `<h1>このPCはウイルスに感染しています<h1>`;
 
@@ -30,6 +32,21 @@ root.render(
       <div key="title">タイトル</div>
       <div key="body">ボディ</div>
     </TitledPanel>
+    <ListTemplate src={books}>
+      {(elem) => (
+        <>
+          <dt>
+            <a
+              href={`https://wings.msn.to/books/${elem.isbn}/${elem.isbn}.jpg`}
+            >
+              {elem.title} ({elem.price}円)
+            </a>
+          </dt>
+          <dd>{elem.summary}</dd>
+        </>
+      )}
+    </ListTemplate>
+    <StateParent></StateParent>
   </React.StrictMode>
 );
 
