@@ -4,12 +4,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { StateForm } from "./StateForm";
+import { StateFormUC } from "./StateFormUC";
+import { FormTextarea } from "./FormTextarea";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
     <StateForm></StateForm>
+    <hr />
+    <StateFormUC></StateFormUC>
+    <FormTextarea></FormTextarea>
   </React.StrictMode>
 );
 
