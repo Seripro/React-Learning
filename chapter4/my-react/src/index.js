@@ -7,6 +7,7 @@ import { StateForm } from "./StateForm";
 import { StateFormUC } from "./StateFormUC";
 import { FormTextarea } from "./FormTextarea";
 import { FormSelect } from "./FormSelect";
+import { FormList } from "./FormList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <FormTextarea></FormTextarea>
     <br />
     <FormSelect></FormSelect>
+    <FormList></FormList>
   </React.StrictMode>
 );
 
