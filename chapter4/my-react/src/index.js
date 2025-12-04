@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { StateForm } from "./StateForm";
 import { StateFormUC } from "./StateFormUC";
 import { FormTextarea } from "./FormTextarea";
+import { FormSelect } from "./FormSelect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +16,8 @@ root.render(
     <hr />
     <StateFormUC></StateFormUC>
     <FormTextarea></FormTextarea>
+    <br />
+    <FormSelect></FormSelect>
   </React.StrictMode>
 );
 
