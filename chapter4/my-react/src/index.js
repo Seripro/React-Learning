@@ -9,6 +9,7 @@ import { FormTextarea } from "./FormTextarea";
 import { FormSelect } from "./FormSelect";
 import { FormList } from "./FormList";
 import { FormRadio } from "./FormRadio";
+import { FormCheck } from "./FormCheck";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
     <FormList></FormList>
     <br />
     <FormRadio></FormRadio>
+    <FormCheck></FormCheck>
   </React.StrictMode>
 );
 
