@@ -10,6 +10,7 @@ import { FormSelect } from "./FormSelect";
 import { FormList } from "./FormList";
 import { FormRadio } from "./FormRadio";
 import { FormCheck } from "./FormCheck";
+import { FormCheckMulti } from "./FormCheckMulti";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,6 +27,7 @@ root.render(
     <br />
     <FormRadio></FormRadio>
     <FormCheck></FormCheck>
+    <FormCheckMulti></FormCheckMulti>
   </React.StrictMode>
 );
 
