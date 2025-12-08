@@ -13,6 +13,7 @@ import { FormCheck } from "./FormCheck";
 import { FormCheckMulti } from "./FormCheckMulti";
 import { FormFiles } from "./FormFiles";
 import { StateTodo } from "./StateTodo";
+import FormBasic from "./FormBasic";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -32,6 +33,7 @@ root.render(
     <FormCheckMulti></FormCheckMulti>
     <FormFiles></FormFiles>
     <StateTodo></StateTodo>
+    <FormBasic></FormBasic>
   </React.StrictMode>
 );
 
