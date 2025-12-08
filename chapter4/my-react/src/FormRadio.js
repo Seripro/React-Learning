@@ -27,7 +27,6 @@ export const FormRadio = () => {
           onChange={handleForm}
         />
         <br />
-        <legend>使用os：</legend>
         <label htmlFor="os_mac">macOS</label>
         <input
           id="os_mac"
@@ -38,7 +37,6 @@ export const FormRadio = () => {
           onChange={handleForm}
         />
         <br />
-        <legend>使用os：</legend>
         <label htmlFor="os_lin">Linux</label>
         <input
           id="os_lin"
