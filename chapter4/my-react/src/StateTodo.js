@@ -5,6 +5,7 @@ let maxId = 0;
 export const StateTodo = () => {
   const [title, setTitle] = useState("");
   const [todo, setTodo] = useState([]);
+  const [desc, setDesc] = useState(true);
   const handleChangeTitle = (e) => {
     setTitle(e.target.value);
   };
@@ -33,6 +34,24 @@ export const StateTodo = () => {
       })
     );
   };
+  const handleRemove = (e) => {
+    setTodo(todo.filter((item) => item.id !== Number(e.target.dataset.id)));
+  };
+
+  // descがtrueのとき、つまり、↑のときにぼたんを押すと、降順に並べ替えられる。つまり、追加が新しい順になる。
+  const handleSort = (e) => {
+    const sorted = [...todo];
+    sorted.sort((m, n) => {
+      if (desc) {
+        return n.created.getTime() - m.created.getTime();
+        // getTime 1970年1月1日 00:00:00(UTC) からの経過ミリ秒を返す
+      } else {
+        return m.created.getTime() - n.created.getTime();
+      }
+    });
+    setDesc((d) => !d);
+    setTodo(sorted);
+  };
   return (
     <div>
       <label>
@@ -47,6 +66,9 @@ export const StateTodo = () => {
       <button type="button" onClick={handleClick}>
         追加
       </button>
+      <button type="button" onClick={handleSort}>
+        ソート（{desc ? "↑" : "↓"}）
+      </button>
       <hr />
       {/*Todoをリストに整形 */}
       <ul>
@@ -55,6 +77,9 @@ export const StateTodo = () => {
             {item.title}
             <button type="button" onClick={handleDone} data-id={item.id}>
               済み
+            </button>
+            <button type="button" onClick={handleRemove} data-id={item.id}>
+              削除
             </button>
           </li>
         ))}
