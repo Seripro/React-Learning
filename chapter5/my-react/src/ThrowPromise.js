@@ -1,5 +1,15 @@
+let flag = false;
 export default function ThrowPromise() {
-  throw new Promise((resolve, reject) => {});
+  if (flag) {
+    return <p>正しく表示できました。</p>;
+  }
+
+  throw new Promise((resolve, reject) => {
+    setTimeout(() => {
+      flag = true;
+      resolve("Success!!");
+    }, 3000);
+  });
 }
 
 // Promise: 非同期処理の結果を表す箱。進行中、成功、失敗
