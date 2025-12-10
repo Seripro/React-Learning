@@ -5,7 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import LazyBasic from "./LazyBasic";
 import SuspenseSimple from "./SuspenseSimple";
 // import SuspenseResult from "./SuspenseResult";
-import ProfilerBasic from "./ProfilerBasic";
+// import ProfilerBasic from "./ProfilerBasic";
+import StyledBasic from "./StyledBasic";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,7 +14,8 @@ root.render(
     <LazyBasic></LazyBasic>
     <SuspenseSimple></SuspenseSimple>
     {/* <SuspenseResult></SuspenseResult> */}
-    <ProfilerBasic></ProfilerBasic>
+    {/* <ProfilerBasic></ProfilerBasic> */}
+    <StyledBasic></StyledBasic>
   </React.StrictMode>
 );
 
