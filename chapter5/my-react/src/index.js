@@ -9,6 +9,7 @@ import SuspenseSimple from "./SuspenseSimple";
 import StyledBasic from "./StyledBasic";
 import StyledDynamic from "./StyledDynamic";
 import StyledComp from "./StyledComp";
+import { MyButton, MyStyledButton } from "./StyledComp2";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,6 +26,8 @@ root.render(
       }}
     ></StyledDynamic>
     <StyledComp></StyledComp>
+    <MyStyledButton>スタイルボタン</MyStyledButton>
+    <MyButton>マイボタン</MyButton>
   </React.StrictMode>
 );
 
