@@ -8,6 +8,7 @@ import SuspenseSimple from "./SuspenseSimple";
 // import ProfilerBasic from "./ProfilerBasic";
 import StyledBasic from "./StyledBasic";
 import StyledDynamic from "./StyledDynamic";
+import StyledComp from "./StyledComp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         color: "royalblue",
       }}
     ></StyledDynamic>
+    <StyledComp></StyledComp>
   </React.StrictMode>
 );
 
