@@ -7,6 +7,7 @@ import SuspenseSimple from "./SuspenseSimple";
 // import SuspenseResult from "./SuspenseResult";
 // import ProfilerBasic from "./ProfilerBasic";
 import StyledBasic from "./StyledBasic";
+import StyledDynamic from "./StyledDynamic";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,12 @@ root.render(
     {/* <SuspenseResult></SuspenseResult> */}
     {/* <ProfilerBasic></ProfilerBasic> */}
     <StyledBasic></StyledBasic>
+    <StyledDynamic
+      theme={{
+        radius: true,
+        color: "royalblue",
+      }}
+    ></StyledDynamic>
   </React.StrictMode>
 );
 
