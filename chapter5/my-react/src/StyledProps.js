@@ -5,6 +5,7 @@ const MyPanel = styled.div`
   padding: 10px;
   border: 1px solid #000;
   color: white;
+  //   propsが定義されていないため、アロー関数で書く
   border-radius: ${(props) => (props.theme.radius ? "10px" : "0px")};
   background-color: ${(props) => props.theme.color};
 `;
