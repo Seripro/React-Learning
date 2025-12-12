@@ -12,6 +12,7 @@ import StyledComp from "./StyledComp";
 import { MyButton, MyStyledButton } from "./StyledComp2";
 import StyledCommon from "./StyledCommon";
 import StyledProps from "./StyledProps";
+import EmotionJsx from "./EmotionJsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -32,6 +33,9 @@ root.render(
     <MyButton>マイボタン</MyButton>
     <StyledCommon></StyledCommon>
     <StyledProps></StyledProps>
+    <hr />
+    <p>Emotion</p>
+    <EmotionJsx></EmotionJsx>
   </React.StrictMode>
 );
 
