@@ -11,6 +11,7 @@ import StyledDynamic from "./StyledDynamic";
 import StyledComp from "./StyledComp";
 import { MyButton, MyStyledButton } from "./StyledComp2";
 import StyledCommon from "./StyledCommon";
+import StyledProps from "./StyledProps";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -30,6 +31,7 @@ root.render(
     <MyStyledButton>スタイルボタン</MyStyledButton>
     <MyButton>マイボタン</MyButton>
     <StyledCommon></StyledCommon>
+    <StyledProps></StyledProps>
   </React.StrictMode>
 );
 
