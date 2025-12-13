@@ -25,3 +25,29 @@ export default function PortalBasic() {
     </form>
   );
 }
+
+/*
+export default function PortalBasic() {
+  const [show, setShow] = useState(false);
+  const handleDialog = () => {
+    setShow((s) => !s);
+  };
+  return (
+    <>
+      <button type="button" onClick={handleDialog} disabled={show}>
+        開く
+      </button>
+      {show &&
+        createPortal(
+          <>
+            <p>ダイアログ</p>
+            <button type="button" onClick={handleDialog}>
+              閉じる
+            </button>
+          </>,
+          document.getElementById("dialog")
+        )}
+    </>
+  );
+}
+*/
