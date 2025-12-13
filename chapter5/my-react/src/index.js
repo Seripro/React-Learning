@@ -13,6 +13,7 @@ import { MyButton, MyStyledButton } from "./StyledComp2";
 import StyledCommon from "./StyledCommon";
 import StyledProps from "./StyledProps";
 import EmotionJsx from "./EmotionJsx";
+import PortalBasic from "./PortalBasic";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -36,6 +37,11 @@ root.render(
     <hr />
     <p>Emotion</p>
     <EmotionJsx></EmotionJsx>
+    <hr></hr>
+    <>
+      <div id="dialog"></div>
+      <PortalBasic></PortalBasic>
+    </>
   </React.StrictMode>
 );
 
